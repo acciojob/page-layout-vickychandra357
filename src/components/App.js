@@ -5,9 +5,9 @@ const App = () => {
   return (
     <PageLayout
       header={<h1>Welcome to my website</h1>}
-      footer={<h2>© 2023 My Website. All right reserved.</h2>}
+      footer={<p>© 2023 My Website. All right reserved.</p>}
     >
-      <h2>This is the content of my website.</h2>
+      <p>This is the content of my website.</p>
     </PageLayout>
   );
 };
