@@ -2,6 +2,7 @@ import React from 'react';
 import PageLayout from './PageLayout';
 import Header from './Header';
 import './../styles/App.css'
+import Footer from './Footer';
 
 const App = () => {
   let x="Welcome to my website";
@@ -9,11 +10,12 @@ const App = () => {
   let z="© 2023 My Website. All right reserved.";
 
   return (
-    <div>
+    <>
       <Header header={x}></Header>
       <PageLayout pageLayout={y}/>
-      © 2023 My Website. All right reserved.
-    </div>
+      <Footer footer={z}/>
+      {/* © 2023 My Website. All right reserved. */}
+    </>
   )
 
 };
