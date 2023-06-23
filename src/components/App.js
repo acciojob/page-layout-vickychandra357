@@ -1,8 +1,9 @@
 import React from 'react';
-import PageLayout from './PageLayout';
+import Content from './Content';
 import Header from './Header';
 import './../styles/App.css'
 import Footer from './Footer';
+
 
 const App = () => {
   let x="Welcome to my website";
@@ -12,9 +13,9 @@ const App = () => {
   return (
     <>
       <Header header={x}></Header>
-      <PageLayout pageLayout={y}/>
-      <Footer footer={z}/>
-      {/* © 2023 My Website. All right reserved. */}
+      <Content content={y}/>
+      {/* <Footer footer={z}/> */}
+      © 2023 My Website. All right reserved.
     </>
   )
 

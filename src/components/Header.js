@@ -2,9 +2,8 @@ import React from "react";
 import  ReactDOM  from "react-dom";
 
 function Header({header}){
-return <div>
-         <h1 className="header">{header}</h1>
-    </div>
+return    <h1 className="header">{header}</h1>
+  
 
 
 }
