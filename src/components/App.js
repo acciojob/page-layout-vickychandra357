@@ -1,15 +1,21 @@
 import React from 'react';
 import PageLayout from './PageLayout';
+import Header from './Header';
+import './../styles/App.css'
 
 const App = () => {
+  let x="Welcome to my website";
+  let y="This is the content of my website."
+  let z="© 2023 My Website. All right reserved.";
+
   return (
-    <PageLayout
-      header={<h1>Welcome to my website</h1>}
-      footer={<p>© 2023 My Website. All right reserved.</p>}
-    >
-      <p>This is the content of my website.</p>
-    </PageLayout>
-  );
+    <div>
+      <Header header={x}></Header>
+      <PageLayout pageLayout={y}/>
+      © 2023 My Website. All right reserved.
+    </div>
+  )
+
 };
 
 export default App;

@@ -1,14 +1,8 @@
 import React from 'react';
 
-const PageLayout = ({ header, footer, children }) => {
+const PageLayout = ({ pageLayout}) => {
   return (
-    <div>
-      {header && <div>{header}</div>}
-      <div>{children}</div>
-      <div>
-      {footer && <div>{footer}</div>}
-      </div>
-    </div>
+    <p className='pageLayout'>{pageLayout}</p>
   );
 };
 
